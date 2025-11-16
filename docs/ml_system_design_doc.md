@@ -59,18 +59,19 @@
 ```mermaid
 flowchart TD
     A[Input comment text] --> B[Text preprocessing]
-    B --> C[ML model (e.g. BERT)]
-    C --> D[Classification]
-    D --> E[Output: 0/1 + probability]
+    B --> C[ML model]
+    C --> D[Classification (0/1)]
+    D --> E[Output with probability]
     E --> F[FastAPI service]
+```
 
-```markdown
 *Пояснение:*
 - Input comment text — входной текст комментария
 - Text preprocessing — очистка, токенизация
 - ML model — обученная модель (например, BERT)
-- Classification — предсказание метки токсичности
-- FastAPI service — REST API-интерфейс
+- Classification — предсказание токсичности
+- Output — результат модели
+- FastAPI service — инференс-сервис
 
 ## Прочая информация
 
