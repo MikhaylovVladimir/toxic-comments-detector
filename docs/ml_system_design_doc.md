@@ -60,8 +60,8 @@
 flowchart TD
     A[Input comment text] --> B[Text preprocessing]
     B --> C[ML model]
-    C --> D[Classification (0/1)]
-    D --> E[Output with probability]
+    C --> D[Classification]
+    D --> E[Output]
     E --> F[FastAPI service]
 ```
 
@@ -69,9 +69,9 @@ flowchart TD
 - Input comment text — входной текст комментария
 - Text preprocessing — очистка, токенизация
 - ML model — обученная модель (например, BERT)
-- Classification — предсказание токсичности
-- Output — результат модели
-- FastAPI service — инференс-сервис
+- Classification — определение токсичности
+- Output — метка (0 или 1) и вероятность
+- FastAPI service — REST API для инференса
 
 ## Прочая информация
 
