@@ -1,0 +1,9 @@
+[tool.black]
+line-length = 88
+target-version = ["py39"]
+
+[tool.ruff]
+line-length = 88
+select = ["E", "F", "W", "I", "B", "C4", "RUF"]
+ignore = ["E501"]
+exclude = ["notebooks", "data"]
