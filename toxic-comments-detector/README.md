@@ -11,11 +11,11 @@ pip install -r requirements.txt
 ```
 
 ### 2) Проверка наличия модели
-
+```bash
 models/distilbert-toxic/
-
+```
 ### 3) Запуск API
-
+```bash
 uvicorn app.main:app --host 0.0.0.0 --port 8000
-
+```
 
