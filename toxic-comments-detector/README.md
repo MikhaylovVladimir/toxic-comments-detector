@@ -24,6 +24,6 @@ uvicorn app.main:app --host 0.0.0.0 --port 8000
 ```
 ### 4) Интерактивная проверка по адрессу
 Svager UI
-[uvicorn app.main:app --host 0.0.0.0 --port 8000](http://localhost:8000/docs
+[uvicorn app.main:app --host 0.0.0.0 --port 8000](http://localhost:8000/docs)
 
 
